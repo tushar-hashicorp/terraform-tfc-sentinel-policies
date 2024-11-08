@@ -1,5 +1,5 @@
 module "cis_v1-2-0_policies" {
-  source = "../pre-written-policy"
+  source = "./pre-written-policy"
 
   name                                 = var.name
   policy_github_repository             = var.policy_github_repository
