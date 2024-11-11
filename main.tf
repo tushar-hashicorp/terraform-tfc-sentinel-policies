@@ -1,9 +1,3 @@
-variable "policy_github_repository" {
-  description = "The name of the GitHub repository where the policies reside. This name should not include the GitHub organization."
-  type        = list(string)
-  default     = [ "policy-library-cis-aws-cloudtrail-terraform", "policy-library-aws-networking-terraform" ] 
-}
-
 module "cis_v1-2-0_policies" {
   source = "./pre-written-policy"
 
