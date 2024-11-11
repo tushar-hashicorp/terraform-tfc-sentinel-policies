@@ -15,9 +15,3 @@ variable "name" {
   type        = string
   default     = "testing"
 }
-
-variable "policy_github_repository" {
-  description = "The name of the GitHub repository where the policies reside. This name should not include the GitHub organization."
-  type        = list(string)
-  default     = [ "policy-library-cis-aws-cloudtrail-terraform", "policy-library-aws-networking-terraform" ] 
-}
